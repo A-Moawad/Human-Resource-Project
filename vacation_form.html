@@ -32,46 +32,51 @@
         </nav>
     </header>
 
-    <form>
-        <table style="margin: 6px;border-spacing: 10px;">
-            <caption><h3>Vacation form</h3></caption>
-            <tr>
-                <td>
-                    <label for="id">ID</label>
-                </td>  
-                <td><input type="text" name="id" id="id"></td>
-            </tr>  
-            <tr>
-                <td>
-                    <label for="Reason">Reason</label>
+    <fieldset>
+        <legend>
+            <h1>Vacation Form</h1>
+        </legend>
+        <form>
+            <table style="margin: 6px;border-spacing: 10px;">
+                <caption><h3>Vacation form</h3></caption>
+                <tr>
+                    <td>
+                        <label for="id">ID</label>
+                    </td>  
+                    <td><input type="text" name="id" id="id"></td>
+                </tr>  
+                <tr>
+                    <td>
+                        <label for="Reason">Reason</label>
+                        </td>
+                        <td><input type="text" name="Reason" id="Reason"></td>
+                    </tr>
+                <tr>
+                    <td>
+                        <label for="from" ">from</label>
                     </td>
-                    <td><input type="text" name="Reason" id="Reason"></td>
+                    <td><input style="width: 100%;" type="date" name="startDate" id="from"></td>
                 </tr>
-            <tr>
-                <td>
-                    <label for="from" ">from</label>
-                </td>
-                <td><input style="width: 100%;" type="date" name="startDate" id="from"></td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="to">to</label>
-                </td>
-                <td><input style="width:100% ;" type="date" name="endDate" id="to"></td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="Status">Status</label>
-                </td>
-                <td><input type="text" name="Status" id="Status"></td>
-            </tr>  
-            
-            <tfoot>
-                <td><label for="Sub"></label>Submit</td>
-                <td><input style="width: 100%;" type="submit" value="OK!" id="sub"></td>
-            </tfoot>
-        </table>
-    </form>
+                <tr>
+                    <td>
+                        <label for="to">to</label>
+                    </td>
+                    <td><input style="width:100% ;" type="date" name="endDate" id="to"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Status">Status</label>
+                    </td>
+                    <td><input type="text" name="Status" id="Status"></td>
+                </tr>  
+                
+                <tfoot>
+                    <td><label for="Sub"></label>Submit</td>
+                    <td><input style="width: 100%;" type="submit" value="OK!" id="sub"></td>
+                </tfoot>
+            </table>
+        </form>
+    </fieldset>
 
     <script src="js/main.js"></script>
 </body>
