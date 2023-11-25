@@ -45,6 +45,11 @@
     color: var(--main-color);
     font-size: 16px;
   }
+  @media (max-width: 767px) {
+    header {
+      display: none;
+    }
+  }
   /* end header  */
   /* start landing page  */
   .landing {
@@ -71,3 +76,51 @@
     font-size: 18px;
   }
   /* end landing page  */
+
+  /* start add employee page  */
+  .add-employee {
+    background-image: url(../images/form2.jpg);
+    background-size: cover;
+    background-color: #fff;
+    /* width: fit-content; */
+    padding: 30px;
+    height: 100vh;
+    margin: auto;
+  }
+  .add-employee legend {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .add-employee form {
+    margin: auto;
+    background-color: #eee;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 700px;
+  }
+  .add-employee input,
+  .add-employee select {
+    padding: 5px 30px;
+    display: block;
+    background-color: rgb(222, 222, 241);
+    border: 1px solid #ccc
+  }
+  
+  @media (max-width: 767px) {
+    .add-employee form {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .add-employee label {
+      text-align: center;
+    }
+    .add-employee input {
+      width: 100%;
+    }
+    .add-employee .row {
+      width: 100%;
+    }
+  }
